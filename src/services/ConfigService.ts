@@ -46,7 +46,7 @@ export default class ConfigService {
 
   private static getDefaultConfig = (): Config => {
     return {
-      apiUrl: 'https://li.quest/v1',
+      apiUrl: '127.0.0.1/multichain/api/v1',
       rpcs: ConfigService.chainIdToObject([]),
       multicallAddresses: ConfigService.chainIdToObject(undefined),
       defaultExecutionSettings: DefaultExecutionSettings,
